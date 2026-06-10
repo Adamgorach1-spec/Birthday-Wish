@@ -1,0 +1,226 @@
+
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#050505,#17002b,#32004d);
+  position:relative;
+  color:white;
+}
+
+/* Background Glow */
+/*.circle{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(255,255,255,0.05);
+  animation:float 8s infinite ease-in-out;
+}
+
+.circle:nth-child(1){
+  width:200px;
+  height:200px;
+  top:10%;
+  left:10%;
+}
+
+.circle:nth-child(2){
+  width:260px;
+  height:260px;
+  bottom:5%;
+  right:5%;
+  animation-delay:2s;
+}*/
+
+.circle:nth-child(3){
+  width:140px;
+  height:140px;
+  bottom:20%;
+  left:18%;
+  animation-delay:4s;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-20px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* Main Container */
+.container{
+  width:90%;
+  max-width:450px;
+  padding:40px 30px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.1);
+  text-align:center;
+  z-index:2;
+  box-shadow:0 0 40px rgba(183,0,255,0.25);
+  animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.hidden{
+  display:none;
+}
+
+.emoji,
+.gift,
+.gift-box,
+.finalEmoji{
+  font-size:65px;
+  animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-10px);
+  }
+}
+
+h1{
+  margin-top:15px;
+  font-size:30px;
+}
+
+.subtitle{
+  margin-top:15px;
+  color:#a91f1f;
+  line-height:24px;
+  font-size:20px;
+}
+
+.input-box{
+  margin-top:25px;
+}
+
+input{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:none;
+  outline:none;
+  border-radius:14px;
+  background:rgba(255,255,255,0.12);
+  color:white;
+  font-size:15px;
+}
+
+input::placeholder{
+  color:#ccc;
+}
+
+.btn{
+  margin-top:20px;
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:15px;
+  background:linear-gradient(45deg,#ff00cc,#7a00ff);
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.03);
+}
+
+.loading-box{
+  width:100%;
+  height:18px;
+  margin-top:25px;
+  background:rgba(255,255,255,0.1);
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.loading-bar{
+  height:100%;
+  width:0%;
+  background:linear-gradient(45deg,#ff00cc,#7a00ff);
+  animation:load 10s linear forwards;
+}
+
+@keyframes load{
+  from{
+    width:0%;
+  }
+  to{
+    width:100%;
+  }
+}
+
+.shayri{
+  margin-top:25px;
+  line-height:34px;
+  color:#fff;
+  font-size:17px;
+}
+
+.glitch{
+  color:#ff4dff;
+  animation:glitch 0.3s infinite;
+}
+
+@keyframes glitch{
+  0%{
+    transform:translateX(0);
+  }
+  25%{
+    transform:translateX(-2px);
+  }
+  50%{
+    transform:translateX(2px);
+  }
+  75%{
+    transform:translateX(-2px);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+
+.recover{
+  margin-top:15px;
+  color:#bbb;
+}
+
+#finalWish{
+  font-size:30px;
+  color:#fff;
+}
+

@@ -1,0 +1,166 @@
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Birthday Surprise 🎂</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="funnyMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="emmoMusic" loop>
+    <source src="emomusic.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Background Glow 
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>--->
+
+  <!-- MAIN CONTAINER -->
+      <div class="container" id="mainContainer">
+
+    <!-- ENTRY SCREEN -->
+      <div id="entryScreen">
+
+      <div class="emoji">🎁</div>
+
+      <h1>Birthday Surprise</h1>
+
+      <p class="subtitle">
+        Something Special is waiting for you ✨
+      </p>
+
+      <div class="input-box">
+
+        <input type="text" id="nameInput" placeholder="Enter Your Name">
+
+        <input type="date" id="birthdate">
+
+      </div>
+
+      <button class="btn" onclick="startSurprise()">
+        ✨ Unlock Surprise ✨
+      </button>
+
+    </div>
+
+    <!-- LOADING SCREEN -->
+    <div id="loadingScreen" class="hidden">
+
+      <div class="gift">🎁</div>
+
+      <h1>Preparing Your Surprise...</h1>
+
+      <p class="subtitle" id="loadingText">
+        Connecting to Birthday Server...
+      </p>
+
+      <div class="loading-box">
+        <div class="loading-bar"></div>
+      </div>
+
+    </div>
+
+    <!-- GIFT SCREEN -->
+    <div id="giftScreen" class="hidden">
+
+      <div class="gift-box">🎁</div>
+
+      <h1>Your Gift Is Ready</h1>
+
+      <p class="subtitle">
+        Tap carefully to open your surprise 👀
+      </p>
+
+      <button class="btn" onclick="showFunnyShayri()">
+        🎁 Open Gift
+      </button>
+
+    </div>
+
+    <!-- FUNNY SHAYRI -->
+    <div id="funnyScreen" class="hidden">
+
+      <h1>😂 Special Shayri 😂</h1>
+
+      <p class="shayri">
+        Birthday tera aaya hai,<br>
+        Phone sabne chupaya hai 😭<br><br>
+
+        Cake ka sab wait kar rahe,<br>
+        Gift ka budget hil gaya hai 😂<br><br>
+
+        Bas ek problem reh gayi...<br>
+        Paisa kisne dena hai? 👀
+      </p>
+
+    </div>
+
+    <!-- WRONG VIDEO -->
+    <div id="prankScreen" class="hidden">
+
+      <h1 class="glitch">❌ OOPS WRONG SUPRISE😂</h1>
+
+      <p class="subtitle">
+        ⚠ SYSTEM RECOVERING FROM EMBARASSEMENT...
+      </p>
+
+      <p class="recover">
+        Please wait... restoring respect level 😭
+      </p>
+
+    </div>
+
+    <!-- EMOTIONAL SCREEN -->
+    <div id="emotionalScreen" class="hidden">
+
+      <h1>💌 A Real Message</h1>
+
+      <p class="shayri" id="emotionalText">
+      </p>
+
+    </div>
+
+    <!-- FINAL SCREEN -->
+    <div id="finalScreen" class="hidden">
+
+      <div class="finalEmoji">🎉</div>
+
+      <h1 id="finalWish">
+        HAPPY   BIRTHDAY 🎂
+      </h1>
+
+      <p class="subtitle">
+        May your life always stay filled with happiness,
+        success and endless smiles ❤️
+      </p>
+
+      <button class="btn" onclick="location.reload()">
+        🔄 Replay Surprise
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
